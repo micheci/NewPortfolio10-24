@@ -6,8 +6,6 @@
 -->
 <html>
 	<head>
-		<title>Micheci Portfolio</title>
-		<!-- Google tag (gtag.js) -->
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNJ429W1D2"></script>
 <script>
@@ -71,7 +69,17 @@
 
 		<!-- Main -->
 			<div id="main">
-
+				<script>
+					/**
+					* The following event is sent when the page loads. You could
+					* wrap the event in a JavaScript function so the event is
+					* sent when the user performs some action.
+					*/
+					gtag('event', 'screen_view', {
+					  'app_name': 'Portfolio',
+					  'screen_name': 'Home'
+					});
+				  </script> 
 				<!-- About Me -->
 				<div id="aboutMe" class="visible">
 					<header class="major">
