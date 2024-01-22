@@ -164,7 +164,7 @@
 						</div>
 				</section>
 						
-				<button id="togglePage" class="button">Next</button>
+				<button id="togglePage" onclick="test()" class="button">Next</button>
 
 				</section>
 
@@ -292,6 +292,36 @@
 				// Initially show the first page
 				showPage(currentPage);
 			</script>
+
+<script>
+	// Your JavaScript code here
+  
+	const test = async () => {
+	  try {
+		console.log('xd');
+  
+		// Clear existing entries in the dataLayer
+		window.dataLayer = [];
+  
+		// Assuming you have the user data available (replace 'data' with actual user data)
+		const data = {
+		  username: 'exampleUsername',
+		  // Add other user data properties if needed
+		};
+  
+		// Push user data to the cleared dataLayer
+		window.dataLayer.push({ event: 'userData', user_id: data.username });
+  
+		// Check the contents of the dataLayer after the push
+		console.log('DataLayer:', window.dataLayer);
+  
+		// Add any additional logic you need
+  
+	  } catch (error) {
+		console.error(error);
+	  }
+	};
+  </script>
 
 	</body>
 
